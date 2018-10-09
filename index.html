@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Resume</title>
+		<link rel="stylesheet" type="text/css" href="../css1/index.css">
+		<script type="text/javascript" src="../lib1/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+	
+		$(function () {
+			
+			var $slider = $('.slider');
+			var $container = $slider.find('.slide-holder');
+			var $slides = $slider.find('.slides');
+			var c = 1;
+
+			var loop;
+
+			function start() {
+				
+				loop = setInterval(function () {
+					$container.animate({'margin-left':'-=1000px'}, 500, function () {
+						c++;
+						if (c === $slides.length) {
+							$container.css({'margin-left':'0px'});
+							c = 1;
+						}
+					});
+				}, 3000);
+			}
+
+			function stop() {
+				clearInterval(loop);
+			}
+			
+			$slider.on('mouseover', function () {
+				stop();
+			});
+			$slider.on('mouseout', function () {
+				start();
+			});
+			 
+			start();	
+		});
+	</script>
+</head>
+<body>
+
+	<div class="click">
+	<a href="index.html">Home</a>
+	<button id="myBtn" href="askquestion.html">Ask Questions</button>
+	<a href="portfolio.html">Portfolio</a>
+
+	</div>
+
+
+	<div class="center">
+
+
+	<div class="slider">
+		
+			<div class="slide-holder">
+				
+				<img src="../img/car1.jpg" class="slides">
+				<img src="../img/car2.jpg" class="slides">
+				<img src="../img/car3.jpg" class="slides">
+				<img src="../img/car4.jpg" class="slides">
+
+				
+				
+			</div>
+		</div>
+	<div class="info">
+
+	<img src="../img/b1.jpg" class="profile">
+	<h3>Jester Mhar D. Cabrera</h3>
+	<h3>Age: 21</h3>
+	<h3>Gender:Male</h3>
+	<h3>Address Blk 19 cabisig road floodway cainta Cambridge village </h3>
+</div>
+<div class="slider">
+			<h1>Lorem</h1>
+			<div class="slide-holder">
+				
+				<img src="../img/mit.jpg" class="slides">
+				<img src="../img/car5.jpg" class="slides">
+				<img src="../img/car6.jpg" class="slides">
+				
+
+				
+				
+			</div>
+		</div>
+	
+	<div class="school">
+	<h1>School Attend</h1>
+
+	<h3>Holy Trinity Academy School</h3>
+	
+	<h3>High School St. Jude Academy, Quezon City</h3>
+	<h3>STI College Shaw</h3>
+	<h3>STI Collge Ortigas-Cainta</h3>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+	<div class="seminar">
+		<h1>Seminar</h1>
+
+		<h3>National Youth Convension</h3>
+		<h3>Aliw Theater</h3>
+		<h3>Global Peace Convention</h3>
+		<h3>Marriot Hotel</h3>
+		<h3>Tech Tutor</h3>
+
+
+
+
+
+
+</div>
+	<div class="skills">
+		<h1>Computer Languages</h1>
+		<h1>Skills</h1>
+		<h3>PHP</h3>
+		<h3>HTML/CSS</h3>
+		<h3>SQL</h3>
+		<h3>JavaScript</h3>
+		<h1>Others Skills</h1>
+		<h3>Driving</h3>
+		<h3>Dota2</h3>
+
+
+
+</div>
+
+
+
+	</div>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;
+			</span>
+			Ask Question?<br><textarea rows="5"cols="60" name="request" ></textarea>
+	<br><button>Submit</button>
+		</div>
+	</div>
+
+	<script>
+
+	var modal = document.getElementById('myModal');
+
+	var btn = document.getElementById("myBtn")
+
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
+</body>
+</html>
