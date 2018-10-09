@@ -1,0 +1,174 @@
+body{
+     background-image: url("../img/car6.jpg");
+   	  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.profile{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+
+ }
+
+.info{
+	 border-style: solid;
+    border-width: 5px;
+    width: 30%;
+    height: 400px; 
+     background-image: url("../img/car3.jpg");
+    padding: 20px;
+   
+}
+.click{
+	 border-style: solid;
+    border-width: 5px;
+	padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+
+
+}
+
+.school{
+	 border-style: solid;
+    border-width: 5px;
+	
+    width: 30%;
+    height: 300px; 
+    background-image: url("../img/car3.jpg");
+    padding: 20px;
+    
+}
+.seminar{
+	 border-style: solid;
+    border-width: 5px;
+    width: 30%;
+    height: 300px; 
+   background-image: url("../img/car3.jpg");
+    padding: 20px;
+  
+}
+.skills{
+	 border-style: solid;
+    border-width: 5px;
+    width: 30%;
+    height: 450px; 
+    background-image: url("../img/car3.jpg");
+    padding: 20px;
+    
+}
+.slider{
+
+	width: 1000px;
+	height: 500px;
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+	float: right;
+	margin-right: 70px;
+	margin-top: -50px;
+	overflow: hidden;
+}
+.slider{
+
+    width: 885px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+.slide-holder{
+
+    width: 6500px;
+    padding: 5px;
+    margin-left: 0px;
+
+}
+
+.slides{
+
+    width: 990px;
+    height: 490px;
+    margin-right: 10px;
+    display: inline;
+    float: left;
+
+}
+.center{
+	text-align: center;
+	margin: 0 auto;
+	
+}
+h1{
+	color: red;
+}
+h2{
+	color: red;
+
+}
+h3{
+	color: white;
+}
+.resume h1{
+    text-align: center;
+}
+
+body{ font-family: Arial,Helvetica, sans-serif;
+    }
+    .modal{
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translate(100%, 80px);
+        z-index: 1;
+        padding:-top 100px;
+        left: 0;
+        top: 0;
+        width: 50%
+        height: 50%;
+        overflow: auto;
+        background: rgb(0.0.0);
+        background-color:
+        rgba(0.0.0.4);
+
+    }
+    .modal-content{
+        background-color: #fefefe;
+        margin: 0 auto;
+        padding: 20px;
+        border:1px solid #888;
+        width: 80%;
+        height: 50%;
+        
+    }
+    .close{
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+#myBtn{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 35px;
+}
