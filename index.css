@@ -8,7 +8,7 @@ body{
 }
 
 .profile{
-	display: block;
+  display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
@@ -17,18 +17,18 @@ body{
  }
 
 .info{
-	 border-style: solid;
+   border-style: solid;
     border-width: 5px;
     width: 30%;
-    height: 400px; 
+    height: 500px; 
      background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
    
 }
 .click{
-	
+  
     border-width: 5px;
-	padding: 30px;
+  padding: 30px;
     text-align: center;
     font-size: 35px;
     
@@ -37,9 +37,9 @@ body{
 }
 
 .school{
-	 border-style: solid;
+   border-style: solid;
     border-width: 5px;
-	
+  
     width: 30%;
     height: 300px; 
     background-color: rgba(0, 0, 0, 0.5);
@@ -47,7 +47,7 @@ body{
     
 }
 .seminar{
-	 border-style: solid;
+   border-style: solid;
     border-width: 5px;
     width: 30%;
     height: 300px; 
@@ -56,7 +56,7 @@ body{
   
 }
 .skills{
-	 border-style: solid;
+   border-style: solid;
     border-width: 5px;
     width: 30%;
     height: 450px; 
@@ -64,23 +64,13 @@ body{
     padding: 20px;
     
 }
-.slider{
 
-	width: 1000px;
-	height: 500px;
-	background-color: rgba(0, 0, 0, 0.5);
-	box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
-	float: right;
-	margin-right: 70px;
-	margin-top: -50px;
-	overflow: hidden;
-}
 .slider{
 
     width: 885px;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-bio: 0 4px 18px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
     float: right;
     margin-right: 0px;
     margin-top: 0px;
@@ -105,19 +95,20 @@ body{
 
 }
 .center{
-	text-align: center;
-	margin: 0 auto;
-	
+  text-align: center;
+  margin: 0 auto;
+  
 }
 h1{
-	color: red;
+ color: hsl(0, 100%, 90%);
+ opacity:0.8;
 }
 h2{
-	color: red;
+  color: red;
 
 }
 h3{
-	color: white;
+  color: white;
 
 
 }
@@ -134,7 +125,7 @@ label{
     border-width: 5px;
     
     width: 30%;
-    height: 300px; 
+    height: 400px; 
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     
@@ -161,8 +152,8 @@ img{
     height: 30px;
     bottom: 0px;
     top: 10px;
-    left: -150px;
-    right: 115px;
+    left: 0px;
+    right: 1px;
 
 }
 .phone{
@@ -172,7 +163,7 @@ img{
     height: 30px;
 
     top: 12px;
-    right: 180px; 
+    right: 1px; 
 }
 
 .profile{
@@ -183,3 +174,56 @@ img{
     right: 170px;
 
 }
+
+.contact h3{
+  position: relative;
+  font-size: 15px;
+}
+
+.bio{
+  
+    float: right;
+   
+
+}
+
+
+  .bio{
+  
+  position: relative;
+  margin: 200px auto 0;
+  width: 880px;
+  height: 500px;
+  background: linear-gradient(0deg,#000,#262626);
+}
+
+.bio:before{
+  content: '';
+  position: absolute;
+  top:  0;
+  left: 0;
+  background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,
+    #0000ff,#00ff00,#ffff00,#ff0000);
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px); 
+  z-index: -1;  
+  animation: animate 20s linear infinite;
+}
+.bio:after{
+  filter: blur(20px);
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0 0;
+  }
+  50%
+  {
+    background-position: 400% 0;
+  }
+  100%
+  {
+    background-position: 0 0;
+  }
