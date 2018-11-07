@@ -3,51 +3,12 @@
 <head>
 	<title>Resume</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<script type="text/javascript" src="../lib1/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript">
 	
-		$(function () {
-			
-			var $slider = $('.slider');
-			var $container = $slider.find('.slide-holder');
-			var $slides = $slider.find('.slides');
-			var c = 1;
-
-			var loop;
-
-			function start() {
-				
-				loop = setInterval(function () {
-					$container.animate({'margin-left':'-=1000px'}, 500, function () {
-						c++;
-						if (c === $slides.length) {
-							$container.css({'margin-left':'0px'});
-							c = 1;
-						}
-					});
-				}, 3000);
-			}
-
-			function stop() {
-				clearInterval(loop);
-			}
-			
-			$slider.on('mouseover', function () {
-				stop();
-			});
-			$slider.on('mouseout', function () {
-				start();
-			});
-			 
-			start();	
-		});
-	</script>
 </head>
 <body>
 
 	<div class="click">
 	<a href="index.html">Home</a>
-	<a href="contact">Contact</a>
 	<a href="askquestion.html">Ask Questions</a>
 	<a href="portfolio.html">Portfolio</a>
 
@@ -55,55 +16,43 @@
 
 
 	<div class="center">
-
-	<div class="slider">
-		
-			<div class="slide-holder">
-				
-				<img src="img/car1.jpg" class="slides">
-				<img src="img/car3.jpg" class="slides">
-				<img src="img/car4.jpg" class="slides">
-
-				
-				
-			</div>
+		<div class="bio">
+		<h1>CAREER OBJECTIVES</h1>
+		<label>I am looking for a position as a Website Designer in the organization where I can utilize my skills at understanding and the opportunity to upgrade my knowledge</label>
 		</div>
-	<div class="info">
 
-	<img src="/img/b1.jpg" class="profile">
+
+
+	<div class="info">
+		<h1>RESUME</h1>
+
+	<img src="b1.jpg" class="profile">
 	<h3>Jester Mhar D. Cabrera</h3>
 	<h3>Age: 21</h3>
 	<h3>Gender:Male</h3>
-	<h3>Address Blk 19 cabisig road floodway cainta Cambridge village </h3>
+	<h3>Address Blk #19 cabisig road floodway cainta Cambridge village </h3>
+	<h3>977-g josefina #3rd street sampaloc manila</h3>
 </div>
+
 	<div class="contact">
 		<h1>Contact</h1>
-		<img src="/img/fb.svg" class="fb">
-		<label>Facebook</label><br><a href="https://www.facebook.com/jester.m.cabrera">https://www.facebook.com/jester.m.cabrera</a>
-		<br><label>Email</label><img src="../img/email.svg" class="email">
+		<img src="fb.svg" class="fb">
+		<h3>Facebook</h3><a href="https://www.facebook.com/jester.m.cabrera"><h3>https://www.facebook.com/jester.m.cabrera</h3></a>
+		<img src="email.svg" class="email">
+		<br><h3>Email</h3>
 		<h3>jester_cabrera@yahoo.com</h3>
-		<label>Contact Number</label><img src="../img/phone.svg" class="phone">
+		<img src="phone.svg" class="phone">
+		<h3>Contact Number</h3>
 		<h3>099430330</h3>
 
 
 
 	</div>
 
-	<div class="slider">
-			<h1>College</h1>
-			<div class="slide-holder">
-				<img src="/img/car5.jpg" class="slides">
-				<img src="/img/mit.jpg" class="slides">
-				<img src="/img/car6.jpg" class="slides">
-				
-
-				
-				
-			</div>
-		</div>
+	
 	
 	<div class="school">
-	<h1>School Attend</h1>
+	<h1>Education</h1>
 
 	<h3>Holy Trinity Academy School</h3>
 	
@@ -155,6 +104,7 @@
 
 </div>
 
-	</div>
+
 </body>
 </html>
+
