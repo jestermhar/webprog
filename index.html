@@ -3,45 +3,7 @@
 <head>
 	<title>Resume</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<script type="text/javascript" src="../lib1/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript">
 	
-		$(function () {
-			
-			var $slider = $('.slider');
-			var $container = $slider.find('.slide-holder');
-			var $slides = $slider.find('.slides');
-			var c = 1;
-
-			var loop;
-
-			function start() {
-				
-				loop = setInterval(function () {
-					$container.animate({'margin-left':'-=1000px'}, 500, function () {
-						c++;
-						if (c === $slides.length) {
-							$container.css({'margin-left':'0px'});
-							c = 1;
-						}
-					});
-				}, 3000);
-			}
-
-			function stop() {
-				clearInterval(loop);
-			}
-			
-			$slider.on('mouseover', function () {
-				stop();
-			});
-			$slider.on('mouseout', function () {
-				start();
-			});
-			 
-			start();	
-		});
-	</script>
 </head>
 <body>
 
@@ -54,32 +16,24 @@
 
 
 	<div class="center">
-
-	<div class="slider">
-			<h1>College</h1>
-			<div class="slide-holder">
-				<img src="car5.jpg" class="slides">
-				<img src="car6.jpg" class="slides">
-				<img src="mit.jpg" class="slides">
-				
-
-				
-				
-			</div>
+		<div class="bio">
+		<h1>CAREER OBJECTIVES</h1>
+		<label>I am looking for a position as a Website Designer in the organization where I can utilize my skills at understanding and the opportunity to upgrade my knowledge</label>
 		</div>
 
+
+
 	<div class="info">
-		<h1>LOREM</h1>
+		<h1>RESUME</h1>
 
 	<img src="b1.jpg" class="profile">
 	<h3>Jester Mhar D. Cabrera</h3>
 	<h3>Age: 21</h3>
 	<h3>Gender:Male</h3>
-	<h3>Address Blk 19 cabisig road floodway cainta Cambridge village </h3>
+	<h3>Address Blk #19 cabisig road floodway cainta Cambridge village </h3>
+	<h3>977-g josefina #3rd street sampaloc manila</h3>
 </div>
-<div class="bio">
-		<h1>lorem</h1>
-		</div>
+
 	<div class="contact">
 		<h1>Contact</h1>
 		<img src="fb.svg" class="fb">
@@ -150,7 +104,7 @@
 
 </div>
 
-	
+
 </body>
 </html>
 
